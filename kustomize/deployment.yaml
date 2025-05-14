@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: paulthedev007/hello-world:latest  # Your Spring Boot Docker image
+          image: paulthedev007/hello-world:1.0  # Your Spring Boot Docker image
           ports:
             - containerPort: 8080  # Spring Boot default port
           env:
