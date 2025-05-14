@@ -9,4 +9,5 @@ spec:
     - protocol: TCP
       port: 30080  # Exposing port 80 for external access (or choose your preferred port)
       targetPort: 8080  # Internal port used by the Spring Boot app
-  type: ClusterIP  # Can change to NodePort if you want external access
+#  type: ClusterIP  # Can change to NodePort if you want external access
+  type: NodePort  # Can change to NodePort if you want external access
