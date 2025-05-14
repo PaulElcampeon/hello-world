@@ -9,7 +9,6 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
-COPY --from=build /app/ten.csv ten.csv
 
 # Expose the port the app runs on
 EXPOSE 8080
